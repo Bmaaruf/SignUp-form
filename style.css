@@ -1,0 +1,111 @@
+:root {
+  --main-color: #4c44e5;
+  --main-button-color: #4943e5;
+  --secondary-button-color: #7b66ff;
+  --secondary-color: rgba(255, 255, 255);
+  --main-text: rgba(8, 11, 18);
+  --secondary-text: #797aa1;
+  --secondary-hover: #262388;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: grey;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "FontAwesome", sans-serif;
+}
+
+main {
+  background-color: var(--secondary-color);
+  display: flex;
+  max-width: 800px;
+  line-height: 2;
+}
+.left {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 6em 2em;
+  text-align: center;
+  flex: 0 0 50%;
+  gap: 32px;
+}
+.sub-button {
+  background-color: var(--secondary-button-color);
+  border: none;
+  padding: 0.8em 0.8em;
+  font: inherit;
+  color: inherit;
+  border-radius: 8px;
+  transition: ease 0.3s;
+}
+/* .sub-head {
+  margin-bottom: 24px;
+} */
+.main-head {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.more-action {
+  text-align: center;
+}
+.sub-button:hover {
+  background-color: var(--secondary-hover);
+}
+.right {
+  padding: 2em;
+  flex: 0 0 50%;
+}
+input {
+  width: 100%;
+  padding: 0.3em 1em;
+  margin-bottom: 16px;
+  font: inherit;
+  border-radius: 5px;
+  border: 1px solid var(--main-text);
+}
+input:focus-visible {
+  outline: none;
+  border-color: var(--main-button-color);
+}
+
+.main-button {
+  width: 100%;
+  background-color: var(--main-button-color);
+  border: none;
+  color: var(--secondary-color);
+  padding: 0.4em;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  font: inherit;
+  transition: ease 0.2s;
+}
+.main-button:hover {
+  background-color: var(--secondary-hover);
+}
+.social {
+  font-size: 24px;
+  color: var(--secondary-button-color);
+}
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--secondary-button-color);
+}
+footer a:hover {
+  color: var(--secondary-hover);
+}
