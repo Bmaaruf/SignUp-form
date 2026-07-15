@@ -118,4 +118,7 @@ footer a:hover {
   .left {
     padding: 3em 2em;
   }
+  .main-head {
+    margin-bottom: 0;
+  }
 }
