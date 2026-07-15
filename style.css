@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: grey;
+  background-color: var(--secondary-button-color);
   display: flex;
   height: 100vh;
   align-items: center;
@@ -39,6 +39,7 @@ main {
   flex: 0 0 50%;
   gap: 32px;
 }
+
 .sub-button {
   background-color: var(--secondary-button-color);
   border: none;
@@ -108,4 +109,11 @@ footer a {
 }
 footer a:hover {
   color: var(--secondary-hover);
+}
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    max-width: 420px;
+    line-height: 1;
+  }
 }
