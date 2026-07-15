@@ -115,4 +115,7 @@ footer a:hover {
     flex-direction: column;
     max-width: 420px;
   }
+  .left {
+    padding: 3em 2em;
+  }
 }
